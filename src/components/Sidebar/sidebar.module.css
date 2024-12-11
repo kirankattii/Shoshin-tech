@@ -59,7 +59,7 @@
   align-items: center;
   font-size: 16.5px;
   color: var(--lightgray);
-  /* font-weight: 300; */
+  font-weight: 300;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -68,6 +68,7 @@
   color: var(--orange);
   font-weight: 600;
 }
+
 
 @media(max-width:1230px) {
   .container {
@@ -78,6 +79,11 @@
     display: none;
   }
 
+  .menuLinks li .icon {
+    display: block;
+    font-size: 20px;
+  }
+
   .container .logo {
     display: none;
 
@@ -85,6 +91,11 @@
 
   .menuContainer {
     align-items: center;
+  }
+
+  .menuLinks li {
+    gap: 10px;
+    /* Adjust spacing */
   }
 
   .logoIcon {
@@ -110,10 +121,4 @@
 
   }
 
-}
-
-@media(max-width:650px) {
-  .container {
-    display: none;
-  }
 }

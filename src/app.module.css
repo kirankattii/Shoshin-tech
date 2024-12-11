@@ -1,7 +1,6 @@
 .appContainer {
   display: flex;
   align-items: start;
-  position: relative;
 }
 
 .main {
@@ -39,6 +38,10 @@
     margin-top: 85px;
     /* padding: 0 20px; */
   }
+
+  .sidebar {
+    display: block;
+  }
 }
 
 @media(max-width:650px) {
@@ -57,8 +60,4 @@
     width: calc(100% - 40px);
   }
 
-  .sidebar {
-    position: relative;
-    display: none;
-  }
 }
