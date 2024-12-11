@@ -1,0 +1,124 @@
+.dashboardNumbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+
+}
+
+.dashboardStats {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.dashboardNumbers div {
+  background: gray;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+
+.dashboardGraph {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+
+
+.numbers h2 {
+  font-size: 16px;
+  color: var(--blue);
+}
+
+.numbers h1 {
+  font-size: 30px;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.numbers p {
+  font-size: 14px;
+
+}
+
+.graphs {
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.graphs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftGraph {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.leftGraph h2 {
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.leftGraph h1 {
+  font-size: 32px;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.leftGraph p {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  font-size: 14.5px;
+  color: var(--lightgray);
+}
+
+.rightGraph {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 10px;
+
+}
+
+.rightGraph img {
+  width: 120px;
+}
+
+.rightGraph p {
+  background: #FFEFE7;
+  text-wrap: none;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+@media(max-width:650px) {
+  .dashboardNumbers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+  }
+
+  .dashboardGraph {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

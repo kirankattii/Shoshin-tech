@@ -1,0 +1,152 @@
+.container {
+  width: 100%;
+  /* width: calc(100% - 300px); */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  margin-left: 250px;
+  /* position: relative; */
+
+}
+
+.searchIcon {
+  color: #000000;
+  opacity: 0.4;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.searchIcon2 {
+  display: none;
+}
+
+.inputbox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E0E0E0;
+  width: 250px;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 6px;
+  background: #FAFAFA;
+}
+
+.inputbox input {
+  border: none;
+  color: var(--lightgray);
+  width: 100%;
+  outline: none;
+}
+
+.inputbox input::placeholder {
+  font-weight: 500;
+  color: #000;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.rightContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: end;
+
+}
+
+.rightContent div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userInfo {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.leftContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+@media(max-width:1230px) {
+  .container {
+    width: 100%;
+    /* width: calc(100% - 300px); */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 70px;
+    /* position: relative; */
+
+  }
+
+  .menuIcon {
+    display: block;
+    color: var(--lightgray);
+  }
+}
+
+@media(max-width:930px) {
+  .profileIcon {
+    width: 34px;
+  }
+
+  /* .userInfo .arrowDown, */
+  .userInfo span {
+    display: none;
+  }
+
+  .rightContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+
+  }
+
+  .rightContent div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+
+}
+
+@media(max-width:650px) {
+  .container {
+    width: 100%;
+    /* width: calc(100% - 300px); */
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin-left: 0px;
+    /* position: relative; */
+
+  }
+
+  .inputbox {
+    display: none;
+  }
+
+  .searchIcon2 {
+    display: block;
+    color: #000000;
+    opacity: 0.4;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .leftContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
